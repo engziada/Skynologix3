@@ -10,6 +10,7 @@
         var formWrap = document.getElementById('contact-form-wrap');
         var successWrap = document.getElementById('contact-success');
         var errorBanner = document.getElementById('contact-error');
+        var submitEndpoint = 'https://formsubmit.co/ajax/info@skynologix.com';
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -45,14 +46,42 @@
             submitBtn.disabled = true;
             submitBtn.innerHTML = '<svg class="animate-spin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>' + (isAr ? 'جاري الإرسال...' : 'Sending...');
 
-            // Simulate submission (replace with real endpoint)
-            setTimeout(function () {
-                submitBtn.disabled = false;
-                if (formWrap && successWrap) {
-                    formWrap.style.display = 'none';
-                    successWrap.style.display = 'flex';
-                }
-            }, 1500);
+            fetch(submitEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: data.name,
+                    company: data.company,
+                    email: data.email,
+                    phone: data.phone,
+                    message: data.message,
+                    _subject: isAr ? 'رسالة جديدة من نموذج سكاينولوجكس' : 'New message from Skynologix contact form',
+                    _template: 'table'
+                })
+            })
+                .then(function (response) {
+                    if (!response.ok) {
+                        throw new Error('submission_failed');
+                    }
+                    return response.json();
+                })
+                .then(function () {
+                    submitBtn.disabled = false;
+                    if (formWrap && successWrap) {
+                        formWrap.style.display = 'none';
+                        successWrap.style.display = 'flex';
+                    }
+                })
+                .catch(function () {
+                    submitBtn.disabled = false;
+                    submitBtn.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4z"/><path d="M22 2 11 13"/></svg>' + (isAr ? 'إرسال' : 'Send');
+                    if (errorBanner) {
+                        errorBanner.style.display = 'flex';
+                    }
+                });
         });
 
         // Send another
