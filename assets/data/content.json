@@ -1,5 +1,15 @@
 {
   "en": {
+    "navbar": {
+      "home": "Home",
+      "services": "Services",
+      "process": "Process",
+      "portfolio": "Portfolio",
+      "vision": "Vision",
+      "contact": "Contact Us",
+      "cta": "Book a Consultation",
+      "mobile_cta": "Talk to Us"
+    },
     "hero": {
       "badge": "Innovation",
       "title": "Professional Web Solutions That Power SME Growth",
@@ -10,9 +20,107 @@
       "badge_1": "Innovation",
       "badge_2": "Excellence",
       "badge_3": "Forward Vision"
+    },
+    "services": {
+      "title": "Our Services",
+      "subtitle": "Comprehensive digital solutions for your business growth",
+      "card1_title": "Professional Website Launch",
+      "card1_desc": "From idea to launch — we equip your site to be a powerful digital interface that reflects your brand and supports growth.",
+      "card1_link": "Learn More",
+      "card2_title": "Domain & Hosting Management",
+      "card2_desc": "Full setup ensuring site speed and stability without you worrying about technical details.",
+      "card2_link": "Learn More",
+      "card3_title": "Thoughtful User Experience",
+      "card3_desc": "Design based on visitor behavior, facilitating navigation and increasing conversion opportunities.",
+      "card3_link": "Learn More",
+      "card4_title": "Performance & SEO Optimization",
+      "card4_desc": "Integrated technical setup to ensure fast loading and clear indexing in search engines.",
+      "card4_link": "Learn More"
+    },
+    "why_us": {
+      "title": "Why Skynologix?",
+      "subtitle": "Built for business outcomes, not visual noise.",
+      "card1_title": "Design for Goal",
+      "card1_desc": "We don't design just for looks; we build studied interfaces that guide visitors to action.",
+      "card2_title": "Optimized Tech Structure",
+      "card2_desc": "Your site is built with a fast structure, modern SEO standards, and works efficiently on all devices.",
+      "card3_title": "Clear Execution",
+      "card3_desc": "Clear plan, specific stages, and organized delivery without technical complexity.",
+      "card4_title": "Long-term Partnership",
+      "card4_desc": "Our role doesn't end at launch; we monitor performance to ensure stability and continuous improvement."
+    },
+    "process": {
+      "title": "How We Work",
+      "subtitle": "A focused 5-step process from planning to stable launch.",
+      "step1_label": "Discovery",
+      "step2_label": "Planning",
+      "step3_label": "Build",
+      "step4_label": "Testing",
+      "step5_label": "Launch",
+      "card1_title": "Understand the project",
+      "card1_desc": "We start by analyzing your goals, audience, and nature of business.",
+      "card2_title": "Strategic planning",
+      "card2_desc": "We define the appropriate structure and UX that serves your commercial goal.",
+      "card3_title": "Design and implementation",
+      "card3_desc": "We turn the plan into a consistent interface and clear digital identity.",
+      "card4_title": "Testing and optimization",
+      "card4_desc": "We review performance, speed, and UX before launch.",
+      "card5_title": "Launch and follow-up",
+      "card5_desc": "We launch the site officially, with follow-up to ensure stability and improve results."
+    },
+    "trust_strip": {
+      "bold": "Trusted execution for B2B teams:",
+      "text": "Clear plan, defined milestones, measurable performance, and post-launch support."
+    },
+    "testimonials": {
+      "title": "Client Testimonials",
+      "subtitle": "Early client feedback on quality, communication, and delivery clarity.",
+      "card1_quote": "\"Clear process and fast execution. We launched exactly on schedule.\"",
+      "card1_author": "Operations Manager — B2B Services",
+      "card2_quote": "\"The new structure made our offer easier to understand and improved lead quality.\"",
+      "card2_author": "Founder — Consulting Firm",
+      "card3_quote": "\"Reliable support after launch gave us confidence to scale our campaigns.\"",
+      "card3_author": "Marketing Lead — SMB Brand"
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "q1": "How long does a project usually take?",
+      "a1": "Most projects are delivered in 2–6 weeks depending on scope and approvals.",
+      "q2": "Do you provide support after launch?",
+      "a2": "Yes. We provide post-launch support for stability, fixes, and optimization.",
+      "q3": "Can we request edits during implementation?",
+      "a3": "Yes, through structured review checkpoints to keep delivery clear and efficient.",
+      "q4": "How do we start working together?",
+      "a4": "We begin with a discovery call, then share a clear plan, timeline, and deliverables."
+    },
+    "cta": {
+      "title": "Ready to Start Your Digital Journey?",
+      "text": "Contact us today and start your digital journey",
+      "btn_whatsapp": "WhatsApp",
+      "btn_contact": "Contact Us"
+    },
+    "footer": {
+      "brand_desc": "We are a digital agency specializing in providing innovative solutions to transform your business into successful digital experiences.",
+      "links_title": "Quick Links",
+      "contact_title": "Contact Us",
+      "serving": "Serving businesses across Saudi Arabia",
+      "follow_title": "Follow Us",
+      "rights": "© 2026 Skynologix. All rights reserved.",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service"
     }
   },
   "ar": {
+    "navbar": {
+      "home": "الرئيسية",
+      "services": "خدماتنا",
+      "process": "المنهجية",
+      "portfolio": "أعمالنا",
+      "vision": "رؤيتنا",
+      "contact": "تواصل معنا",
+      "cta": "احجز استشارة",
+      "mobile_cta": "تحدث إلينا"
+    },
     "hero": {
       "badge": "ابتكار",
       "title": "حلول ويب احترافية تدعم نمو المنشآت الصغيرة والمتوسطة",
@@ -23,6 +131,94 @@
       "badge_1": "ابتكار",
       "badge_2": "تميز",
       "badge_3": "رؤية مستقبلية"
+    },
+    "services": {
+      "title": "خدماتنا",
+      "subtitle": "حلول رقمية شاملة لنمو أعمالك",
+      "card1_title": "إطلاق المواقع الاحترافية",
+      "card1_desc": "من الفكرة إلى الإطلاق — نجهز موقعك ليكون واجهة رقمية قوية تعكس علامتك وتدعم نموك.",
+      "card1_link": "المزيد",
+      "card2_title": "حجز الدومين وإدارة الاستضافة",
+      "card2_desc": "تهيئة كاملة تضمن سرعة واستقرار الموقع دون أن تنشغل بالتفاصيل التقنية.",
+      "card2_link": "المزيد",
+      "card3_title": "تجربة مستخدم مدروسة",
+      "card3_desc": "تصميم مبني على سلوك الزائر، يسهّل التصفح ويزيد فرص التحويل.",
+      "card3_link": "المزيد",
+      "card4_title": "تحسين الأداء والظهور في البحث",
+      "card4_desc": "تهيئة تقنية متكاملة لضمان سرعة التحميل ووضوح الفهرسة في محركات البحث.",
+      "card4_link": "المزيد"
+    },
+    "why_us": {
+      "title": "لماذا سكاينولوجكس؟",
+      "subtitle": "حل متكامل تحت سقف واحد",
+      "card1_title": "تصميم يخدم الهدف",
+      "card1_desc": "لا نصمم لمجرد الجمال، بل نبني واجهات مدروسة تقود الزائر نحو الإجراء المطلوب.",
+      "card2_title": "بنية تقنية محسّنة",
+      "card2_desc": "موقعك يُبنى بهيكل سريع، متوافق مع معايير SEO الحديثة، ويعمل بكفاءة على جميع الأجهزة.",
+      "card3_title": "وضوح في التنفيذ",
+      "card3_desc": "خطة واضحة، مراحل محددة، وتسليم منظم دون أن تنشغل بالتفاصيل التقنية.",
+      "card4_title": "شراكة طويلة المدى",
+      "card4_desc": "لا ينتهي دورنا عند الإطلاق، بل نتابع الأداء لضمان الاستقرار والتطوير المستمر."
+    },
+    "process": {
+      "title": "منهجيتنا",
+      "subtitle": "خطوات واضحة من الفكرة إلى الإطلاق",
+      "step1_label": "اكتشاف",
+      "step2_label": "خبرة",
+      "step3_label": "عملية",
+      "step4_label": "مرونة",
+      "step5_label": "تكامل",
+      "card1_title": "فهم المشروع",
+      "card1_desc": "نبدأ بتحليل أهدافك، جمهورك، وطبيعة نشاطك.",
+      "card2_title": "تخطيط استراتيجي",
+      "card2_desc": "نحدد الهيكل المناسب وتجربة الاستخدام التي تخدم هدفك التجاري.",
+      "card3_title": "التصميم والتنفيذ",
+      "card3_desc": "نحوّل الخطة إلى واجهة متناسقة وهوية رقمية واضحة.",
+      "card4_title": "الاختبار والتحسين",
+      "card4_desc": "نراجع الأداء والسرعة وتجربة المستخدم قبل الإطلاق.",
+      "card5_title": "الإطلاق والمتابعة",
+      "card5_desc": "نطلق الموقع بشكل رسمي، مع متابعة لضمان الاستقرار وتحسين النتائج"
+    },
+    "trust_strip": {
+      "bold": "",
+      "text": "خطة دقيقة، مراحل محددة، ونتائج قابلة للقياس. نلتزم بتنفيذ المشروعات بدقة وفقاً للجدول الزمني المتفق عليه، مع شفافية كاملة في كل مرحلة من مراحل العمل، وتقديم تقارير دورية تُظهر التقدم المحرز، مع ضمان الجودة في كل مرحلة وتسليم نهائي يلبي جميع المتطلبات."
+    },
+    "testimonials": {
+      "title": "آراء العملاء",
+      "subtitle": "بعض آراء عملائنا عن جودة العمل والتواصل والتسليم.",
+      "card1_quote": "\"عملية واضحة وتنفيذ سريع. أطلقنا الموقع في الموعد المحدد تمامًا.\"",
+      "card1_author": "مدير العمليات — خدمات B2B",
+      "card2_quote": "\"الهيكلة الجديدة جعلت عرضنا أسهل للفهم وحسنت جودة العملاء المحتملين.\"",
+      "card2_author": "المؤسس — شركة استشارات",
+      "card3_quote": "\"الدعم الموثوق بعد الإطلاق منحنا الثقة لتوسيع حملاتنا.\"",
+      "card3_author": "مدير التسويق — علامة تجارية"
+    },
+    "faq": {
+      "title": "الأسئلة الشائعة",
+      "q1": "كم يستغرق المشروع عادة؟",
+      "a1": "معظم المشاريع يتم تسليمها خلال 2-6 أسابيع حسب النطاق والموافقات.",
+      "q2": "هل تقدمون دعمًا فنيًا بعد الإطلاق؟",
+      "a2": "نعم، نوفر دعمًا ما بعد الإطلاق لضمان الاستقرار والإصلاحات والتحسين.",
+      "q3": "هل يمكن طلب تعديلات أثناء التنفيذ؟",
+      "a3": "نعم، من خلال نقاط مراجعة منظمة للحفاظ على وضوح وكفاءة التسليم.",
+      "q4": "كيف نبدأ العمل معكم؟",
+      "a4": "نبدأ بمكالمة استكشافية، ثم نشارك خطة واضحة وجدولًا زمنيًا والمخرجات."
+    },
+    "cta": {
+      "title": "جاهز لبدء رحلتك الرقمية؟",
+      "text": "تواصل معنا اليوم وابدأ رحلتك الرقمية",
+      "btn_whatsapp": "واتساب",
+      "btn_contact": "تواصل معنا"
+    },
+    "footer": {
+      "brand_desc": "وكالة رقمية متخصصة في تقديم حلول مبتكرة لتحويل أعمالك إلى تجارب رقمية ناجحة.",
+      "links_title": "روابط سريعة",
+      "contact_title": "تواصل معنا",
+      "serving": "نخدم الشركات في المملكة العربية السعودية",
+      "follow_title": "تابعنا",
+      "rights": "© 2026 سكاينولوجكس. جميع الحقوق محفوظة.",
+      "privacy": "سياسة الخصوصية",
+      "terms": "الشروط والأحكام"
     }
   }
 }

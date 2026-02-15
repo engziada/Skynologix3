@@ -60,12 +60,12 @@
 
         <!-- Desktop Nav -->
         <div class="nav-links">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="how-it-works.html" class="nav-link">Process</a>
-          <a href="portfolio.html" class="nav-link">Portfolio</a>
-          <a href="about.html" class="nav-link">Vision</a>
-          <a href="contact.html" class="nav-link">Contact Us</a>
+          <a href="index.html" class="nav-link" data-content="navbar.home">Home</a>
+          <a href="services.html" class="nav-link" data-content="navbar.services">Services</a>
+          <a href="how-it-works.html" class="nav-link" data-content="navbar.process">Process</a>
+          <a href="portfolio.html" class="nav-link" data-content="navbar.portfolio">Portfolio</a>
+          <a href="about.html" class="nav-link" data-content="navbar.vision">Vision</a>
+          <a href="contact.html" class="nav-link" data-content="navbar.contact">Contact Us</a>
         </div>
 
         <!-- Actions -->
@@ -110,7 +110,7 @@
             </svg>
           </button>
           <!-- CTA -->
-          <a href="contact.html" class="nav-cta">Book a Consultation</a>
+          <a href="contact.html" class="nav-cta" data-content="navbar.cta">Book a Consultation</a>
           <!-- Mobile Toggle -->
           <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
             <svg id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -130,13 +130,13 @@
 
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="mobile-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="how-it-works.html">Process</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">Vision</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="contact.html" class="mobile-cta">Talk to Us</a>
+        <a href="index.html" data-content="navbar.home">Home</a>
+        <a href="services.html" data-content="navbar.services">Services</a>
+        <a href="how-it-works.html" data-content="navbar.process">Process</a>
+        <a href="portfolio.html" data-content="navbar.portfolio">Portfolio</a>
+        <a href="about.html" data-content="navbar.vision">Vision</a>
+        <a href="contact.html" data-content="navbar.contact">Contact Us</a>
+        <a href="contact.html" class="mobile-cta" data-content="navbar.mobile_cta">Talk to Us</a>
       </div>
     </nav>
   </header>
@@ -246,10 +246,10 @@
         <div class="section-heading">
           <div class="heading-row">
             <div class="line"></div>
-            <h2>Our Services</h2>
+            <h2 data-content="services.title">Our Services</h2>
             <div class="line"></div>
           </div>
-          <p>Comprehensive digital solutions for your business growth</p>
+          <p data-content="services.subtitle">Comprehensive digital solutions for your business growth</p>
         </div>
       </div>
 
@@ -264,13 +264,16 @@
             </svg>
           </div>
           <div>
-            <h3>Professional Website Launch</h3>
-            <p>From idea to launch — we equip your site to be a powerful digital interface that reflects your brand and supports growth.</p>
-            <a href="services.html" class="learn-more">Learn More <svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <h3 data-content="services.card1_title">Professional Website Launch</h3>
+            <p data-content="services.card1_desc">From idea to launch — we equip your site to be a powerful digital interface that reflects your brand and supports growth.</p>
+            <a href="services.html" class="learn-more">
+              <span data-content="services.card1_link">Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
-              </svg></a>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="reveal feature-card glass-card glass-card-hover" data-delay="100">
@@ -283,13 +286,16 @@
             </svg>
           </div>
           <div>
-            <h3>Domain & Hosting Management</h3>
-            <p>Full setup ensuring site speed and stability without you worrying about technical details.</p>
-            <a href="services.html" class="learn-more">Learn More <svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <h3 data-content="services.card2_title">Domain & Hosting Management</h3>
+            <p data-content="services.card2_desc">Full setup ensuring site speed and stability without you worrying about technical details.</p>
+            <a href="services.html" class="learn-more">
+              <span data-content="services.card2_link">Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
-              </svg></a>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="reveal feature-card glass-card glass-card-hover" data-delay="200">
@@ -301,13 +307,16 @@
             </svg>
           </div>
           <div>
-            <h3>Thoughtful User Experience</h3>
-            <p>Design based on visitor behavior, facilitating navigation and increasing conversion opportunities.</p>
-            <a href="services.html" class="learn-more">Learn More <svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <h3 data-content="services.card3_title">Thoughtful User Experience</h3>
+            <p data-content="services.card3_desc">Design based on visitor behavior, facilitating navigation and increasing conversion opportunities.</p>
+            <a href="services.html" class="learn-more">
+              <span data-content="services.card3_link">Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
-              </svg></a>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="reveal feature-card glass-card glass-card-hover" data-delay="300">
@@ -319,13 +328,16 @@
             </svg>
           </div>
           <div>
-            <h3>Performance & SEO Optimization</h3>
-            <p>Integrated technical setup to ensure fast loading and clear indexing in search engines.</p>
-            <a href="services.html" class="learn-more">Learn More <svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <h3 data-content="services.card4_title">Performance & SEO Optimization</h3>
+            <p data-content="services.card4_desc">Integrated technical setup to ensure fast loading and clear indexing in search engines.</p>
+            <a href="services.html" class="learn-more">
+              <span data-content="services.card4_link">Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
-              </svg></a>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -347,28 +359,31 @@
         <div class="section-heading">
           <div class="heading-row">
             <div class="line"></div>
-            <h2>Why Skynologix?</h2>
+            <h2 data-content="why_us.title">Why Skynologix?</h2>
             <div class="line"></div>
           </div>
-          <p>Built for business outcomes, not visual noise.</p>
+          <p data-content="why_us.subtitle">Built for business outcomes, not visual noise.</p>
         </div>
       </div>
 
       <div class="grid-4">
         <div class="reveal small-card glass-card glass-card-hover" data-delay="0">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
               <path d="m9 12 2 2 4-4" />
-            </svg></div>
+            </svg>
+          </div>
           <div>
-            <h3>Design for Goal</h3>
-            <p>We don't design just for looks; we build studied interfaces that guide visitors to action.</p>
+            <h3 data-content="why_us.card1_title">Design for Goal</h3>
+            <p data-content="why_us.card1_desc">We don't design just for looks; we build studied interfaces that guide visitors to action.</p>
           </div>
         </div>
         <div class="reveal small-card glass-card glass-card-hover" data-delay="100">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
               <path d="M12 2v4" />
               <path d="M12 18v4" />
               <path d="M4.93 4.93 7.76 7.76" />
@@ -377,34 +392,39 @@
               <path d="M18 12h4" />
               <path d="M4.93 19.07 7.76 16.24" />
               <path d="M16.24 7.76 19.07 4.93" />
-            </svg></div>
+            </svg>
+          </div>
           <div>
-            <h3>Optimized Tech Structure</h3>
-            <p>Your site is built with a fast structure, modern SEO standards, and works efficiently on all devices.</p>
+            <h3 data-content="why_us.card2_title">Optimized Tech Structure</h3>
+            <p data-content="why_us.card2_desc">Your site is built with a fast structure, modern SEO standards, and works efficiently on all devices.</p>
           </div>
         </div>
         <div class="reveal small-card glass-card glass-card-hover" data-delay="200">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
               <path d="M9 11l3 3L22 4" />
               <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
-            </svg></div>
+            </svg>
+          </div>
           <div>
-            <h3>Clear Execution</h3>
-            <p>Clear plan, specific stages, and organized delivery without technical complexity.</p>
+            <h3 data-content="why_us.card3_title">Clear Execution</h3>
+            <p data-content="why_us.card3_desc">Clear plan, specific stages, and organized delivery without technical complexity.</p>
           </div>
         </div>
         <div class="reveal small-card glass-card glass-card-hover" data-delay="300">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
               <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
               <circle cx="9" cy="7" r="4" />
               <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
               <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-            </svg></div>
+            </svg>
+          </div>
           <div>
-            <h3>Long-term Partnership</h3>
-            <p>Our role doesn't end at launch; we monitor performance to ensure stability and continuous improvement.</p>
+            <h3 data-content="why_us.card4_title">Long-term Partnership</h3>
+            <p data-content="why_us.card4_desc">Our role doesn't end at launch; we monitor performance to ensure stability and continuous improvement.</p>
           </div>
         </div>
       </div>
@@ -425,10 +445,10 @@
       <div class="section-heading">
         <div class="heading-row">
           <div class="line"></div>
-          <h2>How We Work</h2>
+          <h2 data-content="process.title">How We Work</h2>
           <div class="line"></div>
         </div>
-        <p>A focused 5-step process from planning to stable launch.</p>
+        <p data-content="process.subtitle">A focused 5-step process from planning to stable launch.</p>
       </div>
 
       <!-- Stepper -->
@@ -436,19 +456,24 @@
         <div class="stepper-line"></div>
         <div class="grid-6">
           <div class="stepper-item">
-            <div class="stepper-num">1</div><span class="stepper-label">Discovery</span>
+            <div class="stepper-num">1</div>
+            <span class="stepper-label" data-content="process.step1_label">Discovery</span>
           </div>
           <div class="stepper-item">
-            <div class="stepper-num">2</div><span class="stepper-label">Planning</span>
+            <div class="stepper-num">2</div>
+            <span class="stepper-label" data-content="process.step2_label">Planning</span>
           </div>
           <div class="stepper-item">
-            <div class="stepper-num">3</div><span class="stepper-label">Build</span>
+            <div class="stepper-num">3</div>
+            <span class="stepper-label" data-content="process.step3_label">Build</span>
           </div>
           <div class="stepper-item">
-            <div class="stepper-num">4</div><span class="stepper-label">Testing</span>
+            <div class="stepper-num">4</div>
+            <span class="stepper-label" data-content="process.step4_label">Testing</span>
           </div>
           <div class="stepper-item">
-            <div class="stepper-num">5</div><span class="stepper-label">Launch</span>
+            <div class="stepper-num">5</div>
+            <span class="stepper-label" data-content="process.step5_label">Launch</span>
           </div>
         </div>
       </div>
@@ -461,8 +486,8 @@
             <div class="step-num">01</div>
             <div class="step-line"></div>
           </div>
-          <h3>Understand the project</h3>
-          <p>We start by analyzing your goals, audience, and nature of business.</p>
+          <h3 data-content="process.card1_title">Understand the project</h3>
+          <p data-content="process.card1_desc">We start by analyzing your goals, audience, and nature of business.</p>
         </div>
         <div class="reveal step-card glass-card glass-card-hover" data-delay="100">
           <div class="corner-glow"></div>
@@ -470,8 +495,8 @@
             <div class="step-num">02</div>
             <div class="step-line"></div>
           </div>
-          <h3>Strategic planning</h3>
-          <p>We define the appropriate structure and UX that serves your commercial goal.</p>
+          <h3 data-content="process.card2_title">Strategic planning</h3>
+          <p data-content="process.card2_desc">We define the appropriate structure and UX that serves your commercial goal.</p>
         </div>
         <div class="reveal step-card glass-card glass-card-hover" data-delay="200">
           <div class="corner-glow"></div>
@@ -479,8 +504,8 @@
             <div class="step-num">03</div>
             <div class="step-line"></div>
           </div>
-          <h3>Design and implementation</h3>
-          <p>We turn the plan into a consistent interface and clear digital identity.</p>
+          <h3 data-content="process.card3_title">Design and implementation</h3>
+          <p data-content="process.card3_desc">We turn the plan into a consistent interface and clear digital identity.</p>
         </div>
         <div class="reveal step-card glass-card glass-card-hover" data-delay="300">
           <div class="corner-glow"></div>
@@ -488,8 +513,8 @@
             <div class="step-num">04</div>
             <div class="step-line"></div>
           </div>
-          <h3>Testing and optimization</h3>
-          <p>We review performance, speed, and UX before launch.</p>
+          <h3 data-content="process.card4_title">Testing and optimization</h3>
+          <p data-content="process.card4_desc">We review performance, speed, and UX before launch.</p>
         </div>
         <div class="reveal step-card glass-card glass-card-hover" data-delay="400">
           <div class="corner-glow"></div>
@@ -497,8 +522,8 @@
             <div class="step-num">05</div>
             <div class="step-line"></div>
           </div>
-          <h3>Launch and follow-up</h3>
-          <p>We launch the site officially, with follow-up to ensure stability and improve results.</p>
+          <h3 data-content="process.card5_title">Launch and follow-up</h3>
+          <p data-content="process.card5_desc">We launch the site officially, with follow-up to ensure stability and improve results.</p>
         </div>
       </div>
     </div>
@@ -507,8 +532,8 @@
   <section class="section section-light">
     <div class="container">
       <div class="trust-strip glass-card reveal">
-        <strong>Trusted execution for B2B teams:</strong>
-        <span>Clear plan, defined milestones, measurable performance, and post-launch support.</span>
+        <strong data-content="trust_strip.bold">Trusted execution for B2B teams:</strong>
+        <span data-content="trust_strip.text">Clear plan, defined milestones, measurable performance, and post-launch support.</span>
       </div>
     </div>
   </section>
@@ -518,15 +543,15 @@
       <div class="section-heading reveal">
         <div class="heading-row">
           <div class="line"></div>
-          <h2>Client Testimonials</h2>
+          <h2 data-content="testimonials.title">Client Testimonials</h2>
           <div class="line"></div>
         </div>
-        <p>Early client feedback on quality, communication, and delivery clarity.</p>
+        <p data-content="testimonials.subtitle">Early client feedback on quality, communication, and delivery clarity.</p>
       </div>
       <div class="grid-3">
-        <div class="glass-card small-card reveal"><p>"Clear process and fast execution. We launched exactly on schedule."</p><h3>Operations Manager — B2B Services</h3></div>
-        <div class="glass-card small-card reveal" data-delay="120"><p>"The new structure made our offer easier to understand and improved lead quality."</p><h3>Founder — Consulting Firm</h3></div>
-        <div class="glass-card small-card reveal" data-delay="240"><p>"Reliable support after launch gave us confidence to scale our campaigns."</p><h3>Marketing Lead — SMB Brand</h3></div>
+        <div class="glass-card small-card reveal"><p data-content="testimonials.card1_quote">"Clear process and fast execution. We launched exactly on schedule."</p><h3 data-content="testimonials.card1_author">Operations Manager — B2B Services</h3></div>
+        <div class="glass-card small-card reveal" data-delay="120"><p data-content="testimonials.card2_quote">"The new structure made our offer easier to understand and improved lead quality."</p><h3 data-content="testimonials.card2_author">Founder — Consulting Firm</h3></div>
+        <div class="glass-card small-card reveal" data-delay="240"><p data-content="testimonials.card3_quote">"Reliable support after launch gave us confidence to scale our campaigns."</p><h3 data-content="testimonials.card3_author">Marketing Lead — SMB Brand</h3></div>
       </div>
     </div>
   </section>
@@ -536,15 +561,15 @@
       <div class="section-heading reveal">
         <div class="heading-row">
           <div class="line"></div>
-          <h2>Frequently Asked Questions</h2>
+          <h2 data-content="faq.title">Frequently Asked Questions</h2>
           <div class="line"></div>
         </div>
       </div>
       <div class="faq-list">
-        <div class="faq-item glass-card"><h3>How long does a project usually take?</h3><p>Most projects are delivered in 2–6 weeks depending on scope and approvals.</p></div>
-        <div class="faq-item glass-card"><h3>Do you provide support after launch?</h3><p>Yes. We provide post-launch support for stability, fixes, and optimization.</p></div>
-        <div class="faq-item glass-card"><h3>Can we request edits during implementation?</h3><p>Yes, through structured review checkpoints to keep delivery clear and efficient.</p></div>
-        <div class="faq-item glass-card"><h3>How do we start working together?</h3><p>We begin with a discovery call, then share a clear plan, timeline, and deliverables.</p></div>
+        <div class="faq-item glass-card"><h3 data-content="faq.q1">How long does a project usually take?</h3><p data-content="faq.a1">Most projects are delivered in 2–6 weeks depending on scope and approvals.</p></div>
+        <div class="faq-item glass-card"><h3 data-content="faq.q2">Do you provide support after launch?</h3><p data-content="faq.a2">Yes. We provide post-launch support for stability, fixes, and optimization.</p></div>
+        <div class="faq-item glass-card"><h3 data-content="faq.q3">Can we request edits during implementation?</h3><p data-content="faq.a3">Yes, through structured review checkpoints to keep delivery clear and efficient.</p></div>
+        <div class="faq-item glass-card"><h3 data-content="faq.q4">How do we start working together?</h3><p data-content="faq.a4">We begin with a discovery call, then share a clear plan, timeline, and deliverables.</p></div>
       </div>
     </div>
   </section>
@@ -564,8 +589,8 @@
           <div class="cta-glow-bl"></div>
           <div class="cta-inner">
             <div>
-              <h2>Ready to Start Your Digital Journey?</h2>
-              <p>Contact us today and start your digital journey</p>
+              <h2 data-content="cta.title">Ready to Start Your Digital Journey?</h2>
+              <p data-content="cta.text">Contact us today and start your digital journey</p>
             </div>
             <div class="cta-buttons">
               <a href="https://wa.me/967785065603?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7" target="_blank"
@@ -574,10 +599,10 @@
                   stroke-linejoin="round">
                   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
                 </svg>
-                WhatsApp
+                <span data-content="cta.btn_whatsapp">WhatsApp</span>
               </a>
               <a href="contact.html" class="btn-primary">
-                Contact Us
+                <span data-content="cta.btn_contact">Contact Us</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round">
                   <path d="M5 12h14" />
@@ -604,22 +629,22 @@
               <span class="brand">SKYNOLOGIX</span>
             </div>
           </a>
-          <p>We are a digital agency specializing in providing innovative solutions to transform your business into
+          <p data-content="footer.brand_desc">We are a digital agency specializing in providing innovative solutions to transform your business into
             successful digital experiences.</p>
         </div>
         <!-- Quick Links -->
         <div class="footer-links" style="margin-left:3rem">
-          <h3>Quick Links</h3>
+          <h3 data-content="footer.links_title">Quick Links</h3>
           <ul>
-            <li><a href="about.html">Vision</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="how-it-works.html">Process</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html" data-content="navbar.vision">Vision</a></li>
+            <li><a href="services.html" data-content="navbar.services">Services</a></li>
+            <li><a href="how-it-works.html" data-content="navbar.process">Process</a></li>
+            <li><a href="portfolio.html" data-content="navbar.portfolio">Portfolio</a></li>
           </ul>
         </div>
         <!-- Contact -->
         <div>
-          <h3>Contact Us</h3>
+          <h3 data-content="footer.contact_title">Contact Us</h3>
           <ul class="footer-contact">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -636,21 +661,21 @@
                 <path
                   d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
                 <circle cx="12" cy="10" r="3" />
-              </svg><span>Serving businesses across Saudi Arabia</span></li>
+              </svg><span data-content="footer.serving">Serving businesses across Saudi Arabia</span></li>
           </ul>
         </div>
         <!-- Social -->
         <div>
-          <h3>Follow Us</h3>
+          <h3 data-content="footer.follow_title">Follow Us</h3>
           <div class="footer-social"><a href="https://facebook.com/skynologix" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://instagram.com/skynologix" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg></a></div>
         </div>
       </div>
       <!-- Bottom -->
       <div class="footer-bottom">
-        <p>&copy; 2026 Skynologix. All rights reserved.</p>
+        <p data-content="footer.rights">&copy; 2026 Skynologix. All rights reserved.</p>
         <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#" data-content="footer.privacy">Privacy Policy</a>
+          <a href="#" data-content="footer.terms">Terms of Service</a>
         </div>
       </div>
     </div>
