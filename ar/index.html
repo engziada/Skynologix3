@@ -114,18 +114,18 @@
         </div>
         <div class="hero-content">
             <div class="hero-badge-wrapper reveal" data-delay="0">
-                <div class="hero-badge"><span class="ping"></span><span>ابتكار</span></div>
+                <div class="hero-badge"><span class="ping"></span><span data-content="hero.badge">ابتكار</span></div>
             </div>
             <div class="hero-inner" style="margin-left:auto">
                 <div class="reveal" data-delay="0">
-                    <h1 class="ar">حلول ويب احترافية تدعم نمو المنشآت الصغيرة والمتوسطة</h1>
+                    <h1 class="ar" data-content="hero.title">حلول ويب احترافية تدعم نمو المنشآت الصغيرة والمتوسطة</h1>
                 </div>
                 <div class="reveal" data-delay="200">
-                    <p class="hero-subtitle ar">ندمج المعايير الرقمية العالمية مع الخبرة المحلية السعودية لدفع نمو
+                    <p class="hero-subtitle ar" data-content="hero.subtitle">ندمج المعايير الرقمية العالمية مع الخبرة المحلية السعودية لدفع نمو
                         الشركات الطموحة.</p>
                 </div>
                 <div class="reveal hero-ctas" data-delay="400">
-                    <a href="contact.html" class="btn-primary">ابدأ مشروعك الآن <svg viewBox="0 0 24 24" fill="none"
+                    <a href="contact.html" class="btn-primary"><span data-content="hero.cta_primary">ابدأ مشروعك الآن</span> <svg viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14" />
                             <path d="m12 5 7 7-7 7" />
@@ -134,9 +134,9 @@
                         rel="noopener noreferrer" class="btn-glass"><svg viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
-                        </svg>تحدث معنا</a>
+                        </svg><span data-content="hero.cta_secondary">تحدث معنا</span></a>
                 </div>
-                <p class="hero-note">نخدم الشركات في المملكة العربية السعودية — تصميم سريع ومتوافق مع جميع الأجهزة — تسليم منظم ودعم مستمر.</p>
+                <p class="hero-note" data-content="hero.note">نخدم الشركات في المملكة العربية السعودية — تصميم سريع ومتوافق مع جميع الأجهزة — تسليم منظم ودعم مستمر.</p>
                 <div class="hero-badges">
                     <div class="reveal hero-badge-card glass-card" data-delay="600">
                         <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -145,7 +145,7 @@
                                 <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
                                 <path d="M2 12h20" />
                         </svg></div>
-                        <h3>ابتكار</h3>
+                        <h3 data-content="hero.badge_1">ابتكار</h3>
                     </div>
                     <div class="reveal hero-badge-card glass-card" data-delay="700">
                         <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -154,7 +154,7 @@
                                     d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.329.124.5.5 0 0 1-.481-.593l1.515-8.526" />
                                 <circle cx="12" cy="8" r="6" />
                             </svg></div>
-                        <h3>تميز</h3>
+                        <h3 data-content="hero.badge_2">تميز</h3>
                     </div>
                     <div class="reveal hero-badge-card glass-card" data-delay="800">
                         <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -163,7 +163,7 @@
                                     d="M2.062 12.348a1 1 0 0 1 0-.696 10.75 10.75 0 0 1 19.876 0 1 1 0 0 1 0 .696 10.75 10.75 0 0 1-19.876 0" />
                                 <circle cx="12" cy="12" r="3" />
                             </svg></div>
-                        <h3>رؤية مستقبلية</h3>
+                        <h3 data-content="hero.badge_3">رؤية مستقبلية</h3>
                     </div>
                 </div>
             </div>
@@ -565,6 +565,7 @@
 
     <script src="../js/app.js"></script>
     <script src="../js/reveal.js"></script>
+    <script src="../js/content-loader.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+{
+  "en": {
+    "hero": {
+      "badge": "Innovation",
+      "title": "Professional Web Solutions That Power SME Growth",
+      "subtitle": "We design digital experiences based on international standards that elevate your brand value and strengthen your market presence.",
+      "note": "Fast design compatible with all devices — organized delivery and continuous support.",
+      "cta_primary": "Start Your Project Now",
+      "cta_secondary": "Chat with Us",
+      "badge_1": "Innovation",
+      "badge_2": "Excellence",
+      "badge_3": "Forward Vision"
+    }
+  },
+  "ar": {
+    "hero": {
+      "badge": "ابتكار",
+      "title": "حلول ويب احترافية تدعم نمو المنشآت الصغيرة والمتوسطة",
+      "subtitle": "ندمج المعايير الرقمية العالمية مع الخبرة المحلية السعودية لدفع نمو الشركات الطموحة.",
+      "note": "نخدم الشركات في المملكة العربية السعودية — تصميم سريع ومتوافق مع جميع الأجهزة — تسليم منظم ودعم مستمر.",
+      "cta_primary": "ابدأ مشروعك الآن",
+      "cta_secondary": "تحدث معنا",
+      "badge_1": "ابتكار",
+      "badge_2": "تميز",
+      "badge_3": "رؤية مستقبلية"
+    }
+  }
+}

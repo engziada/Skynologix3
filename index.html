@@ -157,23 +157,23 @@
       <div class="hero-badge-wrapper reveal" data-delay="0">
         <div class="hero-badge">
           <span class="ping"></span>
-          <span>Innovation</span>
+          <span data-content="hero.badge">Innovation</span>
         </div>
       </div>
       <div class="hero-inner" style="margin-right:auto">
         <div class="reveal" data-delay="0">
-          <h1 class="en">Professional Web Solutions That Power SME Growth</h1>
+          <h1 class="en" data-content="hero.title">Professional Web Solutions That Power SME Growth</h1>
         </div>
 
         <div class="reveal" data-delay="200">
-          <p class="hero-subtitle en">We design digital experiences based on international standards that elevate your
+          <p class="hero-subtitle en" data-content="hero.subtitle">We design digital experiences based on international standards that elevate your
             brand value and strengthen your market presence.</p>
         </div>
-        <p class="hero-note">Fast design compatible with all devices — organized delivery and continuous support.</p>
+        <p class="hero-note" data-content="hero.note">Fast design compatible with all devices — organized delivery and continuous support.</p>
 
         <div class="reveal hero-ctas" data-delay="400">
           <a href="contact.html" class="btn-primary">
-            Start Your Project Now
+            <span data-content="hero.cta_primary">Start Your Project Now</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M5 12h14" />
@@ -186,7 +186,7 @@
               stroke-linejoin="round">
               <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
             </svg>
-            Chat with Us
+            <span data-content="hero.cta_secondary">Chat with Us</span>
           </a>
         </div>
 
@@ -202,7 +202,7 @@
                 <path d="M2 12h20" />
               </svg>
             </div>
-            <h3>Innovation</h3>
+            <h3 data-content="hero.badge_1">Innovation</h3>
           </div>
           <div class="reveal hero-badge-card glass-card" data-delay="700">
             <div class="icon-box">
@@ -213,7 +213,7 @@
                 <circle cx="12" cy="8" r="6" />
               </svg>
             </div>
-            <h3>Excellence</h3>
+            <h3 data-content="hero.badge_2">Excellence</h3>
           </div>
           <div class="reveal hero-badge-card glass-card" data-delay="800">
             <div class="icon-box">
@@ -224,7 +224,7 @@
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-            <h3>Forward Vision</h3>
+            <h3 data-content="hero.badge_3">Forward Vision</h3>
           </div>
         </div>
       </div>
@@ -659,6 +659,7 @@
   <!-- Scripts -->
   <script src="js/app.js"></script>
   <script src="js/reveal.js"></script>
+  <script src="js/content-loader.js"></script>
 </body>
 
 </html>
