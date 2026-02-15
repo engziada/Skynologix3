@@ -2307,4 +2307,233 @@ textarea {
   display: flex;
   justify-content: center;
   width: 100%
+}/* ===== REDESIGN UPDATES (Flex & Spacing) ===== */
+
+/* 1. Global Section Spacing & Visual Separation */
+.section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.section-lg {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.section-heading {
+  margin-bottom: 5rem;
+}
+
+/* 2. Flex Layouts (Replacing Grids) */
+/* Services, Why Skynologix, Process Cards */
+.grid-2,
+.grid-3,
+.grid-4,
+.grid-5,
+.grid-6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+/* Flex Item Sizing (Rectangular Cards) */
+.grid-2 > * {
+  flex: 1 1 500px; /* Services: Wide rectangular cards */
+  min-width: 300px;
+}
+
+.grid-3 > * {
+  flex: 1 1 350px; /* Process/Testimonials: Medium cards */
+  min-width: 300px;
+}
+
+.grid-4 > * {
+  flex: 1 1 280px; /* Why: Standard cards */
+  min-width: 250px;
+}
+
+.grid-5 > * {
+  flex: 1 1 220px; /* Values */
+  min-width: 200px;
+}
+
+/* 3. Horizontal Process (Stepper) */
+.stepper .grid-6 {
+  flex-wrap: nowrap; /* Force horizontal layout */
+  justify-content: space-between;
+  gap: 1rem;
+  overflow-x: auto; /* Scroll on very small screens if needed */
+  padding-bottom: 1rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.stepper .grid-6 > * {
+  flex: 1;
+  min-width: 80px;
+}
+
+/* 4. Rectangular & Relaxing Card Design */
+.glass-card {
+  border-radius: 0.75rem; /* sharper corners for rectangular feel */
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.feature-card,
+.small-card,
+.value-card,
+.step-card {
+  padding: 3rem 2.5rem; /* More internal spacing */
+  height: 100%;
+}
+
+/* 5. Lighter Icons */
+.icon-box svg,
+.btn-primary svg,
+.btn-glass svg,
+.btn-green svg,
+.footer-contact svg,
+.social-icon-link svg {
+  stroke-width: 1.5px;
+}
+
+/* 6. Relaxing FAQ Design */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Increased gap */
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  padding: 3rem;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s ease;
+}
+
+.faq-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-5px);
+  border-color: rgba(59, 130, 246, 0.2);
+}
+
+.faq-item h3 {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.faq-item p {
+  color: var(--silver-dark);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+/* 7. Trust Strip Detailed Design */
+.trust-strip {
+  padding: 3rem 2rem;
+}
+
+.trust-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.trust-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.trust-icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+  background: rgba(59, 130, 246, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trust-icon svg {
+  width: 24px;
+  height: 24px;
+  color: var(--accent);
+  stroke-width: 1.5px;
+}
+
+.trust-content h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+}
+
+.trust-content p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--silver-dark);
+  font-weight: 500;
+}
+
+/* 8. Equal Height Cards in Grid */
+.grid-2,
+.grid-3,
+.grid-4 {
+  align-items: stretch; /* Ensure equal height */
+}
+
+.grid-2 > .feature-card,
+.grid-2 > .glass-card-hover,
+.grid-3 > .step-card,
+.grid-4 > .small-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Ensure card content fills available space */
+.feature-card > div:last-child,
+.small-card > div:last-child {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Push learn-more link to bottom */
+.feature-card .learn-more {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .section { padding: 5rem 0; }
+  .grid-2 > *, .grid-3 > *, .grid-4 > * {
+    flex: 1 1 100%; /* Stack on mobile */
+  }
+  .stepper .grid-6 {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .trust-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .trust-item {
+    max-width: 100%;
+  }
 }
