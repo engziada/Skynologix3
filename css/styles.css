@@ -2373,15 +2373,33 @@ textarea {
   min-width: 80px;
 }
 
-/* 4. Rectangular & Relaxing Card Design */
+/* General card adjustments for rectangular look */
 .glass-card {
-  border-radius: 0.75rem; /* sharper corners for rectangular feel */
+  border-radius: 0.75rem; /* More rectangular */
+  padding: 2.5rem; /* Uniform padding for glass cards */
   background: rgba(255, 255, 255, 0.02);
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
 
+/* Equal height for grid cards */
+.grid-2 > *,
+.grid-3 > *,
+.grid-4 > * {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid-2 > * > div,
+.grid-3 > * > div,
+.grid-4 > * > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 4. Rectangular & Relaxing Card Design */
 .feature-card,
 .small-card,
 .value-card,
@@ -2435,89 +2453,6 @@ textarea {
   font-size: 1.05rem;
 }
 
-/* 7. Trust Strip Detailed Design */
-.trust-strip {
-  padding: 3rem 2rem;
-}
-
-.trust-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-}
-
-.trust-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 1rem;
-  flex: 1 1 300px;
-  max-width: 400px;
-}
-
-.trust-icon {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 0.75rem;
-  background: rgba(59, 130, 246, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.trust-icon svg {
-  width: 24px;
-  height: 24px;
-  color: var(--accent);
-  stroke-width: 1.5px;
-}
-
-.trust-content h4 {
-  font-size: 1.1rem;
-  font-weight: 700;
-  color: #fff;
-  margin-bottom: 0.5rem;
-  letter-spacing: -0.025em;
-}
-
-.trust-content p {
-  font-size: 0.95rem;
-  line-height: 1.7;
-  color: var(--silver-dark);
-  font-weight: 500;
-}
-
-/* 8. Equal Height Cards in Grid */
-.grid-2,
-.grid-3,
-.grid-4 {
-  align-items: stretch; /* Ensure equal height */
-}
-
-.grid-2 > .feature-card,
-.grid-2 > .glass-card-hover,
-.grid-3 > .step-card,
-.grid-4 > .small-card {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-
-/* Ensure card content fills available space */
-.feature-card > div:last-child,
-.small-card > div:last-child {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-}
-
-/* Push learn-more link to bottom */
-.feature-card .learn-more {
-  margin-top: auto;
-  padding-top: 1rem;
-}
-
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .section { padding: 5rem 0; }
@@ -2525,15 +2460,8 @@ textarea {
     flex: 1 1 100%; /* Stack on mobile */
   }
   .stepper .grid-6 {
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Wrap stepper on mobile if it gets too cramped, or keep scroll */
     justify-content: center;
     gap: 2rem;
-  }
-  .trust-items {
-    flex-direction: column;
-    align-items: center;
-  }
-  .trust-item {
-    max-width: 100%;
   }
 }
