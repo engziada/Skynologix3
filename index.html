@@ -4,15 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skynologix | Professional Digital Solutions in Riyadh</title>
+  <title>Skynologix | Professional Digital Solutions for Saudi Businesses</title>
   <meta name="description"
     content="Build your digital presence with a professional website that combines smart design, fast performance, and seamless user experience">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://skynologix.com/en">
   <link rel="alternate" hreflang="ar" href="https://skynologix.com/ar">
   <link rel="alternate" hreflang="en" href="https://skynologix.com/en">
+  <link rel="alternate" hreflang="x-default" href="https://skynologix.com/en">
   <!-- Open Graph -->
-  <meta property="og:title" content="Skynologix | Professional Digital Solutions in Riyadh">
+  <meta property="og:title" content="Skynologix | Professional Digital Solutions for Saudi Businesses">
   <meta property="og:description"
     content="Build your digital presence with a professional website that combines smart design, fast performance, and seamless user experience">
   <meta property="og:url" content="https://skynologix.com/en">
@@ -21,7 +22,7 @@
   <meta property="og:type" content="website">
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Skynologix | Professional Digital Solutions in Riyadh">
+  <meta name="twitter:title" content="Skynologix | Professional Digital Solutions for Saudi Businesses">
   <meta name="twitter:description"
     content="Build your digital presence with a professional website that combines smart design, fast performance, and seamless user experience">
   <!-- Favicon -->
@@ -30,10 +31,15 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Organization","name":"Skynologix","url":"https://skynologix.com","logo":"https://skynologix.com/logo.svg","contactPoint":{"@type":"ContactPoint","email":"info@skynologix.com","contactType":"customer service","areaServed":"SA","availableLanguage":["Arabic","English"]},"address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressCountry":"SA"}}
+  {"@context":"https://schema.org","@type":"Organization","name":"Skynologix","url":"https://skynologix.com","logo":"https://skynologix.com/logo.svg","contactPoint":{"@type":"ContactPoint","email":"info@skynologix.com","contactType":"customer service","areaServed":"SA","availableLanguage":["Arabic","English"]},"sameAs":["https://instagram.com/skynologix","https://facebook.com/skynologix"]}
   </script>
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Skynologix","url":"https://skynologix.com","address":{"@type":"PostalAddress","addressLocality":"Riyadh","addressRegion":"Riyadh","addressCountry":"SA"},"priceRange":"$$","openingHours":"Su-Th 09:00-18:00"}
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XN68BLTGCB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XN68BLTGCB');
   </script>
 </head>
 
@@ -48,23 +54,37 @@
           <img class="theme-logo" src="assets/logo-white.svg" data-dark="assets/logo-white.svg"
             data-light="assets/logo-dark.svg" alt="Skynologix" width="45" height="45">
           <div class="logo-text">
-            <span class="brand">SKYNO<span>LOGIX</span></span>
-            <span class="city">RIYADH</span>
+            <span class="brand">SKYNOLOGIX</span>
           </div>
         </a>
 
         <!-- Desktop Nav -->
         <div class="nav-links">
-          <a href="index.html" class="nav-link">Home</a>
-          <a href="services.html" class="nav-link">Services</a>
-          <a href="how-it-works.html" class="nav-link">Process</a>
-          <a href="portfolio.html" class="nav-link">Portfolio</a>
-          <a href="about.html" class="nav-link">Vision</a>
-          <a href="contact.html" class="nav-link">Contact Us</a>
+          <a href="index.html" class="nav-link" data-content="navbar.home">Home</a>
+          <a href="services.html" class="nav-link" data-content="navbar.services">Services</a>
+          <a href="how-it-works.html" class="nav-link" data-content="navbar.process">Process</a>
+          <a href="portfolio.html" class="nav-link" data-content="navbar.portfolio">Portfolio</a>
+          <a href="about.html" class="nav-link" data-content="navbar.vision">Vision</a>
+          <a href="contact.html" class="nav-link" data-content="navbar.contact">Contact Us</a>
         </div>
 
         <!-- Actions -->
         <div class="nav-actions">
+          <!-- Socials (Desktop) -->
+          <div class="header-social">
+            <a href="https://instagram.com/skynologix" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </a>
+            <a href="https://facebook.com/skynologix" target="_blank" rel="noopener noreferrer" class="social-icon-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+              </svg>
+            </a>
+          </div>
           <!-- Language Toggle -->
           <div class="lang-toggle">
             <a href="index.html" class="lang-btn active">EN</a>
@@ -90,7 +110,7 @@
             </svg>
           </button>
           <!-- CTA -->
-          <a href="contact.html" class="nav-cta">Book a Consultation</a>
+          <a href="contact.html" class="nav-cta" data-content="navbar.cta">Book a Consultation</a>
           <!-- Mobile Toggle -->
           <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">
             <svg id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -110,13 +130,13 @@
 
       <!-- Mobile Menu -->
       <div id="mobile-menu" class="mobile-menu">
-        <a href="index.html">Home</a>
-        <a href="services.html">Services</a>
-        <a href="how-it-works.html">Process</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="about.html">Vision</a>
-        <a href="contact.html">Contact Us</a>
-        <a href="contact.html" class="mobile-cta">Talk to Us</a>
+        <a href="index.html" data-content="navbar.home">Home</a>
+        <a href="services.html" data-content="navbar.services">Services</a>
+        <a href="how-it-works.html" data-content="navbar.process">Process</a>
+        <a href="portfolio.html" data-content="navbar.portfolio">Portfolio</a>
+        <a href="about.html" data-content="navbar.vision">Vision</a>
+        <a href="contact.html" data-content="navbar.contact">Contact Us</a>
+        <a href="contact.html" class="mobile-cta" data-content="navbar.mobile_cta">Talk to Us</a>
       </div>
     </nav>
   </header>
@@ -124,7 +144,7 @@
   <!-- ===== HERO ===== -->
   <section class="hero">
     <div class="hero-bg">
-      <img src="assets/hero-bg.jpg" alt="" loading="eager">
+      <img src="assets/hero-bg.jpg" alt="Futuristic digital technology background" loading="eager">
       <div class="hero-overlay"></div>
       <div class="mesh-pattern hero-mesh"></div>
       <div class="floating-glow animate-float"
@@ -137,35 +157,36 @@
       <div class="hero-badge-wrapper reveal" data-delay="0">
         <div class="hero-badge">
           <span class="ping"></span>
-          <span>Innovation</span>
+          <span data-content="hero.badge">Innovation</span>
         </div>
       </div>
       <div class="hero-inner" style="margin-right:auto">
         <div class="reveal" data-delay="0">
-          <h1 class="en">Professional Web Solutions That Power SME Growth</h1>
+          <h1 class="en" data-content="hero.title">Professional Web Solutions That Power SME Growth</h1>
         </div>
 
         <div class="reveal" data-delay="200">
-          <p class="hero-subtitle en">We blend international digital standards with Saudi local expertise to drive
-            growth for forward-thinking companies.</p>
+          <p class="hero-subtitle en" data-content="hero.subtitle">We design digital experiences based on international standards that elevate your
+            brand value and strengthen your market presence.</p>
         </div>
+        <p class="hero-note" data-content="hero.note">Fast design compatible with all devices — organized delivery and continuous support.</p>
 
         <div class="reveal hero-ctas" data-delay="400">
           <a href="contact.html" class="btn-primary">
-            Start Your Project Now
+            <span data-content="hero.cta_primary">Start Your Project Now</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M5 12h14" />
               <path d="m12 5 7 7-7 7" />
             </svg>
           </a>
-          <a href="https://wa.me/+966XXXXXXXX?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7" target="_blank"
+          <a href="https://wa.me/967785065603?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7" target="_blank"
             rel="noopener noreferrer" class="btn-glass">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
             </svg>
-            Chat with Us
+            <span data-content="hero.cta_secondary">Chat with Us</span>
           </a>
         </div>
 
@@ -176,12 +197,12 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path
-                  d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
-                <path d="M9 18h6" />
-                <path d="M10 22h4" />
+                  d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
+                <path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" />
+                <path d="M2 12h20" />
               </svg>
             </div>
-            <h3>Innovation</h3>
+            <h3 data-content="hero.badge_1">Innovation</h3>
           </div>
           <div class="reveal hero-badge-card glass-card" data-delay="700">
             <div class="icon-box">
@@ -192,7 +213,7 @@
                 <circle cx="12" cy="8" r="6" />
               </svg>
             </div>
-            <h3>Excellence</h3>
+            <h3 data-content="hero.badge_2">Excellence</h3>
           </div>
           <div class="reveal hero-badge-card glass-card" data-delay="800">
             <div class="icon-box">
@@ -203,7 +224,7 @@
                 <circle cx="12" cy="12" r="3" />
               </svg>
             </div>
-            <h3>Forward Vision</h3>
+            <h3 data-content="hero.badge_3">Forward Vision</h3>
           </div>
         </div>
       </div>
@@ -225,15 +246,37 @@
         <div class="section-heading">
           <div class="heading-row">
             <div class="line"></div>
-            <h2>Our Services</h2>
+            <h2 data-content="services.title">Our Services</h2>
             <div class="line"></div>
           </div>
-          <p>Comprehensive digital solutions for your business growth</p>
+          <p data-content="services.subtitle">Comprehensive digital solutions for your business growth</p>
         </div>
       </div>
 
       <div class="grid-2">
         <div class="reveal feature-card glass-card glass-card-hover" data-delay="0">
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <rect width="20" height="14" x="2" y="3" rx="2" />
+              <line x1="8" x2="16" y1="21" y2="21" />
+              <line x1="12" x2="12" y1="17" y2="21" />
+            </svg>
+          </div>
+          <div>
+            <h3 data-content="services.card1_title">Professional Website Launch</h3>
+            <p data-content="services.card1_desc">From idea to launch — we equip your site to be a powerful digital interface that reflects your brand and supports growth.</p>
+            <a href="services.html" class="learn-more">
+              <span data-content="services.card1_link">Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M5 12h14" />
+                <path d="m12 5 7 7-7 7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="reveal feature-card glass-card glass-card-hover" data-delay="100">
           <div class="icon-box">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
@@ -243,55 +286,37 @@
             </svg>
           </div>
           <div>
-            <h3>Domain & Hosting</h3>
-            <p>Complete management of domain and hosting with guaranteed speed and site stability</p>
-            <a href="services.html" class="learn-more">Learn More <svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <h3 data-content="services.card2_title">Domain & Hosting Management</h3>
+            <p data-content="services.card2_desc">Full setup ensuring site speed and stability without you worrying about technical details.</p>
+            <a href="services.html" class="learn-more">
+              <span data-content="services.card2_link">Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
-              </svg></a>
-          </div>
-        </div>
-        <div class="reveal feature-card glass-card glass-card-hover" data-delay="100">
-          <div class="icon-box">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-              stroke-linejoin="round">
-              <path d="m18 16 4-4-4-4" />
-              <path d="m6 8-4 4 4 4" />
-              <path d="m14.5 4-5 16" />
-            </svg>
-          </div>
-          <div>
-            <h3>Website Design & Development</h3>
-            <p>Attractive and functional interfaces that reflect your brand identity with a user experience focused on
-              converting visitors to clients</p>
-            <a href="services.html" class="learn-more">Learn More <svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M5 12h14" />
-                <path d="m12 5 7 7-7 7" />
-              </svg></a>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="reveal feature-card glass-card glass-card-hover" data-delay="200">
           <div class="icon-box">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
-              <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-              <path
-                d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-              <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
-              <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+              <path d="M12 20h9" />
+              <path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z" />
             </svg>
           </div>
           <div>
-            <h3>Launch & Post-Delivery Support</h3>
-            <p>Comprehensive testing before launch with ongoing technical support and guaranteed stable site operation
-            </p>
-            <a href="services.html" class="learn-more">Learn More <svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <h3 data-content="services.card3_title">Thoughtful User Experience</h3>
+            <p data-content="services.card3_desc">Design based on visitor behavior, facilitating navigation and increasing conversion opportunities.</p>
+            <a href="services.html" class="learn-more">
+              <span data-content="services.card3_link">Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
-              </svg></a>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="reveal feature-card glass-card glass-card-hover" data-delay="300">
@@ -303,13 +328,16 @@
             </svg>
           </div>
           <div>
-            <h3>Balancing Performance & Aesthetics</h3>
-            <p>High speed without sacrificing attractive design, delivering real results for clients</p>
-            <a href="services.html" class="learn-more">Learn More <svg viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <h3 data-content="services.card4_title">Performance & SEO Optimization</h3>
+            <p data-content="services.card4_desc">Integrated technical setup to ensure fast loading and clear indexing in search engines.</p>
+            <a href="services.html" class="learn-more">
+              <span data-content="services.card4_link">Learn More</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round">
                 <path d="M5 12h14" />
                 <path d="m12 5 7 7-7 7" />
-              </svg></a>
+              </svg>
+            </a>
           </div>
         </div>
       </div>
@@ -331,61 +359,72 @@
         <div class="section-heading">
           <div class="heading-row">
             <div class="line"></div>
-            <h2>Why Skynologix?</h2>
+            <h2 data-content="why_us.title">Why Skynologix?</h2>
             <div class="line"></div>
           </div>
-          <p>A complete solution under one roof</p>
+          <p data-content="why_us.subtitle">Built for business outcomes, not visual noise.</p>
         </div>
       </div>
 
       <div class="grid-4">
         <div class="reveal small-card glass-card glass-card-hover" data-delay="0">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" />
-              <path
-                d="m6.08 9.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59" />
-              <path
-                d="m6.08 14.5-3.5 1.6a1 1 0 0 0 0 1.81l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9a1 1 0 0 0 0-1.83l-3.5-1.59" />
-            </svg></div>
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
           <div>
-            <h3>Integrated Solution</h3>
-            <p>From domain to launch, everything under one roof</p>
+            <h3 data-content="why_us.card1_title">Design for Goal</h3>
+            <p data-content="why_us.card1_desc">We don't design just for looks; we build studied interfaces that guide visitors to action.</p>
           </div>
         </div>
         <div class="reveal small-card glass-card glass-card-hover" data-delay="100">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z" />
-            </svg></div>
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M12 2v4" />
+              <path d="M12 18v4" />
+              <path d="M4.93 4.93 7.76 7.76" />
+              <path d="M16.24 16.24 19.07 19.07" />
+              <path d="M2 12h4" />
+              <path d="M18 12h4" />
+              <path d="M4.93 19.07 7.76 16.24" />
+              <path d="M16.24 7.76 19.07 4.93" />
+            </svg>
+          </div>
           <div>
-            <h3>High Performance</h3>
-            <p>Fast websites optimized for search engines</p>
+            <h3 data-content="why_us.card2_title">Optimized Tech Structure</h3>
+            <p data-content="why_us.card2_desc">Your site is built with a fast structure, modern SEO standards, and works efficiently on all devices.</p>
           </div>
         </div>
         <div class="reveal small-card glass-card glass-card-hover" data-delay="200">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
-            </svg></div>
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M9 11l3 3L22 4" />
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+            </svg>
+          </div>
           <div>
-            <h3>Continuous Support</h3>
-            <p>Ongoing technical support after delivery</p>
+            <h3 data-content="why_us.card3_title">Clear Execution</h3>
+            <p data-content="why_us.card3_desc">Clear plan, specific stages, and organized delivery without technical complexity.</p>
           </div>
         </div>
         <div class="reveal small-card glass-card glass-card-hover" data-delay="300">
-          <div class="icon-box"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path
-                d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.329.124.5.5 0 0 1-.481-.593l1.515-8.526" />
-              <circle cx="12" cy="8" r="6" />
-            </svg></div>
+          <div class="icon-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
           <div>
-            <h3>Professional Quality</h3>
-            <p>Design and development at the highest standards</p>
+            <h3 data-content="why_us.card4_title">Long-term Partnership</h3>
+            <p data-content="why_us.card4_desc">Our role doesn't end at launch; we monitor performance to ensure stability and continuous improvement.</p>
           </div>
         </div>
       </div>
@@ -406,10 +445,10 @@
       <div class="section-heading">
         <div class="heading-row">
           <div class="line"></div>
-          <h2>Our Methodology</h2>
+          <h2 data-content="process.title">How We Work</h2>
           <div class="line"></div>
         </div>
-        <p>Clear steps from idea to launch</p>
+        <p data-content="process.subtitle">A focused 5-step process from planning to stable launch.</p>
       </div>
 
       <!-- Stepper -->
@@ -417,22 +456,24 @@
         <div class="stepper-line"></div>
         <div class="grid-6">
           <div class="stepper-item">
-            <div class="stepper-num">1</div><span class="stepper-label">Discovery</span>
+            <div class="stepper-num">1</div>
+            <span class="stepper-label" data-content="process.step1_label">Discovery</span>
           </div>
           <div class="stepper-item">
-            <div class="stepper-num">2</div><span class="stepper-label">Expertise</span>
+            <div class="stepper-num">2</div>
+            <span class="stepper-label" data-content="process.step2_label">Planning</span>
           </div>
           <div class="stepper-item">
-            <div class="stepper-num">3</div><span class="stepper-label">Process</span>
+            <div class="stepper-num">3</div>
+            <span class="stepper-label" data-content="process.step3_label">Build</span>
           </div>
           <div class="stepper-item">
-            <div class="stepper-num">4</div><span class="stepper-label">Flexibility</span>
+            <div class="stepper-num">4</div>
+            <span class="stepper-label" data-content="process.step4_label">Testing</span>
           </div>
           <div class="stepper-item">
-            <div class="stepper-num">5</div><span class="stepper-label">Integration</span>
-          </div>
-          <div class="stepper-item">
-            <div class="stepper-num">6</div><span class="stepper-label">Support</span>
+            <div class="stepper-num">5</div>
+            <span class="stepper-label" data-content="process.step5_label">Launch</span>
           </div>
         </div>
       </div>
@@ -445,8 +486,8 @@
             <div class="step-num">01</div>
             <div class="step-line"></div>
           </div>
-          <h3>Understanding the Project & Goals</h3>
-          <p>We start with a deep understanding of your project and goals to set the right foundation</p>
+          <h3 data-content="process.card1_title">Understand the project</h3>
+          <p data-content="process.card1_desc">We start by analyzing your goals, audience, and nature of business.</p>
         </div>
         <div class="reveal step-card glass-card glass-card-hover" data-delay="100">
           <div class="corner-glow"></div>
@@ -454,8 +495,8 @@
             <div class="step-num">02</div>
             <div class="step-line"></div>
           </div>
-          <h3>Proposing the Best Solution</h3>
-          <p>We present the optimal technical and design solution for your needs</p>
+          <h3 data-content="process.card2_title">Strategic planning</h3>
+          <p data-content="process.card2_desc">We define the appropriate structure and UX that serves your commercial goal.</p>
         </div>
         <div class="reveal step-card glass-card glass-card-hover" data-delay="200">
           <div class="corner-glow"></div>
@@ -463,8 +504,8 @@
             <div class="step-num">03</div>
             <div class="step-line"></div>
           </div>
-          <h3>Design & Development Execution</h3>
-          <p>We turn ideas into digital reality at the highest quality standards</p>
+          <h3 data-content="process.card3_title">Design and implementation</h3>
+          <p data-content="process.card3_desc">We turn the plan into a consistent interface and clear digital identity.</p>
         </div>
         <div class="reveal step-card glass-card glass-card-hover" data-delay="300">
           <div class="corner-glow"></div>
@@ -472,8 +513,8 @@
             <div class="step-num">04</div>
             <div class="step-line"></div>
           </div>
-          <h3>Launch & Comprehensive Testing</h3>
-          <p>We test everything before launch to ensure a perfect experience</p>
+          <h3 data-content="process.card4_title">Testing and optimization</h3>
+          <p data-content="process.card4_desc">We review performance, speed, and UX before launch.</p>
         </div>
         <div class="reveal step-card glass-card glass-card-hover" data-delay="400">
           <div class="corner-glow"></div>
@@ -481,14 +522,54 @@
             <div class="step-num">05</div>
             <div class="step-line"></div>
           </div>
-          <h3>Ongoing Support & Follow-up</h3>
-          <p>We stay with you after delivery to ensure your project's success</p>
+          <h3 data-content="process.card5_title">Launch and follow-up</h3>
+          <p data-content="process.card5_desc">We launch the site officially, with follow-up to ensure stability and improve results.</p>
         </div>
-        <div class="reveal ready-card glass-card" data-delay="500">
-          <div class="emoji-box">🚀</div>
-          <h3>Support</h3>
-          <p>We stay with you after delivery to ensure your project's success</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="trust-strip glass-card reveal">
+        <strong data-content="trust_strip.bold">Trusted execution for B2B teams:</strong>
+        <span data-content="trust_strip.text">Clear plan, defined milestones, measurable performance, and post-launch support.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-navy">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="heading-row">
+          <div class="line"></div>
+          <h2 data-content="testimonials.title">Client Testimonials</h2>
+          <div class="line"></div>
         </div>
+        <p data-content="testimonials.subtitle">Early client feedback on quality, communication, and delivery clarity.</p>
+      </div>
+      <div class="grid-3">
+        <div class="glass-card small-card reveal"><p data-content="testimonials.card1_quote">"Clear process and fast execution. We launched exactly on schedule."</p><h3 data-content="testimonials.card1_author">Operations Manager — B2B Services</h3></div>
+        <div class="glass-card small-card reveal" data-delay="120"><p data-content="testimonials.card2_quote">"The new structure made our offer easier to understand and improved lead quality."</p><h3 data-content="testimonials.card2_author">Founder — Consulting Firm</h3></div>
+        <div class="glass-card small-card reveal" data-delay="240"><p data-content="testimonials.card3_quote">"Reliable support after launch gave us confidence to scale our campaigns."</p><h3 data-content="testimonials.card3_author">Marketing Lead — SMB Brand</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-light">
+    <div class="container">
+      <div class="section-heading reveal">
+        <div class="heading-row">
+          <div class="line"></div>
+          <h2 data-content="faq.title">Frequently Asked Questions</h2>
+          <div class="line"></div>
+        </div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item glass-card"><h3 data-content="faq.q1">How long does a project usually take?</h3><p data-content="faq.a1">Most projects are delivered in 2–6 weeks depending on scope and approvals.</p></div>
+        <div class="faq-item glass-card"><h3 data-content="faq.q2">Do you provide support after launch?</h3><p data-content="faq.a2">Yes. We provide post-launch support for stability, fixes, and optimization.</p></div>
+        <div class="faq-item glass-card"><h3 data-content="faq.q3">Can we request edits during implementation?</h3><p data-content="faq.a3">Yes, through structured review checkpoints to keep delivery clear and efficient.</p></div>
+        <div class="faq-item glass-card"><h3 data-content="faq.q4">How do we start working together?</h3><p data-content="faq.a4">We begin with a discovery call, then share a clear plan, timeline, and deliverables.</p></div>
       </div>
     </div>
   </section>
@@ -508,20 +589,20 @@
           <div class="cta-glow-bl"></div>
           <div class="cta-inner">
             <div>
-              <h2>Ready to Start Your Digital Journey?</h2>
-              <p>Contact us today and start your digital journey</p>
+              <h2 data-content="cta.title">Ready to Start Your Digital Journey?</h2>
+              <p data-content="cta.text">Contact us today and start your digital journey</p>
             </div>
             <div class="cta-buttons">
-              <a href="https://wa.me/+966XXXXXXXX?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7" target="_blank"
+              <a href="https://wa.me/967785065603?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7" target="_blank"
                 rel="noopener noreferrer" class="btn-green">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round">
                   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
                 </svg>
-                WhatsApp
+                <span data-content="cta.btn_whatsapp">WhatsApp</span>
               </a>
               <a href="contact.html" class="btn-primary">
-                Contact Us
+                <span data-content="cta.btn_contact">Contact Us</span>
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round">
                   <path d="M5 12h14" />
@@ -545,26 +626,25 @@
             <img class="theme-logo" src="assets/logo-white.svg" data-dark="assets/logo-white.svg"
               data-light="assets/logo-dark.svg" alt="Skynologix" width="40" height="40">
             <div class="logo-text">
-              <span class="brand">SKYNO<span>LOGIX</span></span>
-              <span class="city">RIYADH</span>
+              <span class="brand">SKYNOLOGIX</span>
             </div>
           </a>
-          <p>We are a digital agency specializing in providing innovative solutions to transform your business into
+          <p data-content="footer.brand_desc">We are a digital agency specializing in providing innovative solutions to transform your business into
             successful digital experiences.</p>
         </div>
         <!-- Quick Links -->
         <div class="footer-links" style="margin-left:3rem">
-          <h3>Quick Links</h3>
+          <h3 data-content="footer.links_title">Quick Links</h3>
           <ul>
-            <li><a href="about.html">Vision</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="how-it-works.html">Process</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="about.html" data-content="navbar.vision">Vision</a></li>
+            <li><a href="services.html" data-content="navbar.services">Services</a></li>
+            <li><a href="how-it-works.html" data-content="navbar.process">Process</a></li>
+            <li><a href="portfolio.html" data-content="navbar.portfolio">Portfolio</a></li>
           </ul>
         </div>
         <!-- Contact -->
         <div>
-          <h3>Contact Us</h3>
+          <h3 data-content="footer.contact_title">Contact Us</h3>
           <ul class="footer-contact">
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
@@ -575,45 +655,27 @@
                 stroke-linejoin="round">
                 <path
                   d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-              </svg><a href="tel:+966XXXXXXXX">+966 50 000 0000</a></li>
+              </svg><a href="tel:+967785065603">+967 785 065 603</a></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                 stroke-linejoin="round">
                 <path
                   d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" />
                 <circle cx="12" cy="10" r="3" />
-              </svg><span>Riyadh, Al Malqa</span></li>
+              </svg><span data-content="footer.serving">Serving businesses across Saudi Arabia</span></li>
           </ul>
         </div>
         <!-- Social -->
         <div>
-          <h3>Follow Us</h3>
-          <div class="footer-social">
-            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <path
-                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z" />
-              </svg></a>
-            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-                <rect width="4" height="12" x="2" y="9" />
-                <circle cx="4" cy="4" r="2" />
-              </svg></a>
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-              </svg></a>
-          </div>
+          <h3 data-content="footer.follow_title">Follow Us</h3>
+          <div class="footer-social"><a href="https://facebook.com/skynologix" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://instagram.com/skynologix" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" x2="17.51" y1="6.5" y2="6.5" /></svg></a></div>
         </div>
       </div>
       <!-- Bottom -->
       <div class="footer-bottom">
-        <p>&copy; 2026 Skynologix. All rights reserved.</p>
+        <p data-content="footer.rights">&copy; 2026 Skynologix. All rights reserved.</p>
         <div class="footer-bottom-links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <a href="#" data-content="footer.privacy">Privacy Policy</a>
+          <a href="#" data-content="footer.terms">Terms of Service</a>
         </div>
       </div>
     </div>
@@ -622,6 +684,7 @@
   <!-- Scripts -->
   <script src="js/app.js"></script>
   <script src="js/reveal.js"></script>
+  <script src="js/content-loader.js"></script>
 </body>
 
 </html>
