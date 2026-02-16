@@ -69,6 +69,28 @@ async function loadContent() {
       }
     });
 
+    // Apply typing titles to elements with data-typing attribute
+    const typingTitles = getNestedValue(content, 'hero.typing_titles');
+    if (typingTitles && Array.isArray(typingTitles)) {
+      document.querySelectorAll('.typing-text').forEach(el => {
+        el.setAttribute('data-typing', JSON.stringify(typingTitles));
+        // Update initial text if it's the first phrase
+        if (typingTitles.length > 0) {
+          const cursorSpan = el.querySelector('.typing-cursor');
+          if (cursorSpan) {
+            // Update text node before cursor
+            const textNode = el.childNodes[0];
+            if (textNode && textNode.nodeType === Node.TEXT_NODE) {
+              textNode.textContent = typingTitles[0];
+            }
+          }
+        }
+      });
+    }
+
+    // Dispatch event to notify that content has been loaded
+    document.dispatchEvent(new CustomEvent('contentLoaded', { detail: { lang } }));
+
   } catch (error) {
     console.error('Content loading error:', error);
   }

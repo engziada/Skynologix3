@@ -302,7 +302,6 @@
     initScrollProgress();
     initCursorGlow();
     initRevealAnimations();
-    initTypingEffect();
     initExitIntentModal();
 
     // Theme toggle button
@@ -310,5 +309,10 @@
     if (themeBtn) {
       themeBtn.addEventListener('click', toggleTheme);
     }
+  });
+
+  // Initialize typing effect after content is loaded (from content-loader.js)
+  document.addEventListener('contentLoaded', function () {
+    initTypingEffect();
   });
 })();

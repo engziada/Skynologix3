@@ -12,7 +12,12 @@
     },
     "hero": {
       "badge": "Innovation",
-      "title": "Professional Web Solutions That Power SME Growth",
+      "title": "Professional Web & E-commerce Solutions",
+      "typing_titles": [
+        "Professional Web & E-comm. Solutions",
+        "We Power SME Growth",
+        "Solutions That Drive Sales"
+      ],
       "subtitle": "We design digital experiences based on international standards that elevate your brand value and strengthen your market presence.",
       "note": "Fast design compatible with all devices — organized delivery and continuous support.",
       "cta_primary": "Start Your Project Now",
@@ -123,7 +128,12 @@
     },
     "hero": {
       "badge": "ابتكار",
-      "title": "حلول ويب احترافية تدعم نمو المنشآت الصغيرة والمتوسطة",
+      "title": "حلول ويب احترافية وتجارة إلكترونية",
+      "typing_titles": [
+        "حلول ويب احترافية وتجارة إلكترونية",
+        "ندعم نمو المنشآت الصغيرة والمتوسطة",
+        "حلول تضمن لك زيادة المبيعات"
+      ],
       "subtitle": "ندمج المعايير الرقمية العالمية مع الخبرة المحلية السعودية لدفع نمو الشركات الطموحة.",
       "note": "نخدم الشركات في المملكة العربية السعودية — تصميم سريع ومتوافق مع جميع الأجهزة — تسليم منظم ودعم مستمر.",
       "cta_primary": "ابدأ مشروعك الآن",
