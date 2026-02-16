@@ -205,13 +205,25 @@
 
   /* --- Typing Effect --- */
   function initTypingEffect() {
+    // Disable typing effect on mobile for better performance
+    const isMobile = window.matchMedia('(max-width: 767px)').matches;
+    if (isMobile) {
+      // On mobile, just show static text without cursor
+      document.querySelectorAll('.typing-text').forEach(element => {
+        const phrases = JSON.parse(element.dataset.typing || '[]');
+        if (phrases.length > 0) {
+          element.textContent = phrases[0];
+        }
+      });
+      return;
+    }
+
     const typingElements = document.querySelectorAll('.typing-text');
     if (!typingElements.length) return;
 
     typingElements.forEach(element => {
       const phrases = JSON.parse(element.dataset.typing || '[]');
       const delay = parseInt(element.dataset.typingDelay, 10) || 3000;
-      const cursor = element.querySelector('.typing-cursor');
       
       if (!phrases.length) return;
 
