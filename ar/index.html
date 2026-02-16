@@ -14,6 +14,8 @@
     <link rel="icon" type="image/svg+xml" href="../assets/logo.svg">
     <link rel="manifest" href="../manifest.json">
     <meta name="theme-color" content="#060f1d">
+    <!-- Preload critical hero image -->
+    <link rel="preload" href="../assets/hero-bg.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -125,7 +127,7 @@
 
     <!-- HERO -->
     <section class="hero">
-        <div class="hero-bg"><img src="../assets/hero-bg.jpg" alt="خلفية تقنية رقمية مستقبلية" loading="eager">
+        <div class="hero-bg"><img src="../assets/hero-bg.webp" alt="خلفية تقنية رقمية مستقبلية" loading="eager" fetchpriority="high" width="1920" height="1080">
             <div class="hero-overlay"></div>
             <div class="mesh-pattern hero-mesh"></div>
             <div class="floating-glow animate-float"
@@ -570,7 +572,7 @@
 
     <!-- CTA -->
     <section class="cta-section">
-        <div class="cta-bg"><img src="../assets/hero-bg.jpg" alt="" loading="lazy">
+        <div class="cta-bg"><img src="../assets/hero-bg.webp" alt="" loading="lazy" width="1920" height="1080">
             <div class="cta-overlay"></div>
             <div class="mesh-pattern" style="position:absolute;inset:0;opacity:.1"></div>
         </div>
