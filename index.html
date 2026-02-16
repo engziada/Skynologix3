@@ -45,6 +45,12 @@
 
 <body>
 
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
+  <!-- Cursor Following Glow -->
+  <div class="hero-cursor-glow" id="cursor-glow"></div>
+
   <!-- ===== NAVBAR ===== -->
   <header id="navbar" class="navbar">
     <nav class="container">
@@ -162,7 +168,9 @@
       </div>
       <div class="hero-inner" style="margin-right:auto">
         <div class="reveal" data-delay="0">
-          <h1 class="en" data-content="hero.title">Professional Web Solutions That Power SME Growth</h1>
+          <h1 class="en gradient-text typing-text" data-typing='["Professional Web & E-commerce Solutions","We Power SME Growth","Solutions That Drive Sales"]' data-typing-delay="3000">
+            Professional Web & E-commerce Solutions<span class="typing-cursor"></span>
+          </h1>
         </div>
 
         <div class="reveal" data-delay="200">
@@ -181,13 +189,55 @@
             </svg>
           </a>
           <a href="https://wa.me/967785065603?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7" target="_blank"
-            rel="noopener noreferrer" class="btn-glass">
+            rel="noopener noreferrer" class="btn-whatsapp">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
               stroke-linejoin="round">
               <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
             </svg>
             <span data-content="hero.cta_secondary">Chat with Us</span>
           </a>
+        </div>
+
+        <!-- Animated Stats -->
+        <div class="stats-section reveal" data-delay="500">
+          <div class="stat-item">
+            <div class="stat-number" data-target="50" data-suffix="+">0</div>
+            <div class="stat-label">Projects Delivered</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="98" data-suffix="%">0</div>
+            <div class="stat-label">Client Satisfaction</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number" data-target="24" data-suffix="h">0</div>
+            <div class="stat-label">Avg. Response</div>
+          </div>
+        </div>
+
+        <!-- Trust Seals -->
+        <div class="trust-seals reveal" data-delay="600">
+          <div class="trust-seal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+            <span>SSL Secured</span>
+          </div>
+          <div class="trust-seal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+            <span>Money-Back Guarantee</span>
+          </div>
+          <div class="trust-seal">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v20"/>
+              <path d="M2 12h20"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+            <span>24/7 Support</span>
+          </div>
         </div>
 
         <!-- Feature Badges -->
@@ -594,7 +644,7 @@
             </div>
             <div class="cta-buttons">
               <a href="https://wa.me/967785065603?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7" target="_blank"
-                rel="noopener noreferrer" class="btn-green">
+                rel="noopener noreferrer" class="btn-whatsapp">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                   stroke-linejoin="round">
                   <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
@@ -680,6 +730,39 @@
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/967785065603?text=%D9%85%D8%B1%D8%AD%D8%A8%D9%8B%D8%A7" class="floating-whatsapp" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+    </svg>
+    <span class="floating-whatsapp-text">Chat Now</span>
+    <div class="whatsapp-status">
+      <span class="status-dot"></span>
+      <span>Online</span>
+    </div>
+  </a>
+
+  <!-- Exit Intent Modal -->
+  <div class="exit-modal" id="exit-modal">
+    <div class="exit-modal-content">
+      <button class="exit-modal-close" id="exit-modal-close" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18" />
+          <path d="m6 6 12 12" />
+        </svg>
+      </button>
+      <h3>Wait! Don't Miss Out</h3>
+      <p>Get a free 15-minute strategy call to discuss your project. No commitment required.</p>
+      <a href="contact.html" class="btn-primary">
+        <span>Get Free Consultation</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
 
   <!-- Scripts -->
   <script src="js/app.js"></script>
