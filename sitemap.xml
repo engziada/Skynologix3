@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- English Pages -->
+  <url>
+    <loc>https://skynologix.com/index.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skynologix.com/ar/index.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/services.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skynologix.com/ar/services.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/how-it-works.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skynologix.com/ar/how-it-works.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/portfolio.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skynologix.com/ar/portfolio.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/about.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skynologix.com/ar/about.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/contact.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://skynologix.com/ar/contact.html"/>
+  </url>
+
+  <!-- Arabic Pages -->
+  <url>
+    <loc>https://skynologix.com/ar/index.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skynologix.com/index.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/ar/services.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skynologix.com/services.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/ar/how-it-works.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skynologix.com/how-it-works.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/ar/portfolio.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skynologix.com/portfolio.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/ar/about.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skynologix.com/about.html"/>
+  </url>
+  <url>
+    <loc>https://skynologix.com/ar/contact.html</loc>
+    <lastmod>2026-02-16</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://skynologix.com/contact.html"/>
+  </url>
+</urlset>

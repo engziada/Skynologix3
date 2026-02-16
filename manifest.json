@@ -1,0 +1,15 @@
+{
+    "name": "Skynologix",
+    "short_name": "Skynologix",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "#060f1d",
+    "theme_color": "#060f1d",
+    "icons": [
+        {
+            "src": "/assets/logo.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ]
+}

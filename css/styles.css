@@ -921,6 +921,14 @@ textarea {
   color: var(--accent)
 }
 
+/* Ensure accessible contrast and visibility */
+.mobile-menu-btn {
+    z-index: 1002;
+    position: relative;
+    background: rgba(0,0,0,0.2);
+    border-radius: 0.5rem;
+}
+
 .menu-toggle svg {
   width: 28px;
   height: 28px
@@ -990,9 +998,10 @@ textarea {
 .hero {
   position: relative;
   min-height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 8rem; /* Increased to clear navbar on mobile */
   overflow: hidden;
   background: var(--navy-dark)
 }
@@ -1111,7 +1120,8 @@ textarea {
   font-weight: 800;
   line-height: 1.15;
   color: #fff;
-  margin-top: 1rem
+  margin-top: 1rem;
+  min-height: 2.3em; /* Fix typewriting layout shift for EN */
 }
 
 .hero h1.en {
@@ -1136,7 +1146,8 @@ textarea {
 .hero h1.ar {
   font-size: 2.5rem;
   letter-spacing: -.025em;
-  line-height: 1.2
+  line-height: 1.2;
+  min-height: 3.6em; /* Fix typewriting layout shift */
 }
 
 @media(min-width:768px) {
@@ -1436,10 +1447,17 @@ textarea {
 }
 
 .feature-card h3 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #fff;
-  letter-spacing: -.025em
+  letter-spacing: -.025em;
+  line-height: 1.4;
+}
+
+@media(min-width:768px) {
+  .feature-card h3 {
+     font-size: 1.5rem;
+  }
 }
 
 .feature-card p {
@@ -2757,8 +2775,15 @@ select:focus-visible {
 
 /* 1. Global Section Spacing & Visual Separation */
 .section {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media(min-width:768px) {
+  .section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
 }
 
 .section-lg {
@@ -2800,8 +2825,17 @@ select:focus-visible {
 }
 
 .grid-5 > * {
-  flex: 1 1 220px; /* Values */
-  min-width: 200px;
+  flex: 1 1 100%; /* Full width on mobile */
+  min-width: 0;   /* Prevent overflow */
+}
+
+@media(min-width: 480px) {
+  .grid-2 > *,
+  .grid-3 > *,
+  .grid-4 > *,
+  .grid-5 > * {
+      min-width: 300px; /* Restore min-width for larger screens */
+  }
 }
 
 /* 3. Horizontal Process (Stepper) */
