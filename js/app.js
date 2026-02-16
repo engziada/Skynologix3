@@ -167,10 +167,18 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
+          // Handle transition delay
+          const delay = parseInt(entry.target.dataset.delay || '0', 10);
+          if (delay > 0) {
+            entry.target.style.transitionDelay = delay + 'ms';
+          }
+          
           entry.target.classList.add('active');
+          
           // Check if this is a stats section and animate counters
           const statNumbers = entry.target.querySelectorAll('.stat-number');
           statNumbers.forEach(stat => animateCounter(stat));
+          
           observer.unobserve(entry.target);
         }
       });
@@ -315,16 +323,12 @@
     initCursorGlow();
     initRevealAnimations();
     initExitIntentModal();
+    initTypingEffect();
 
     // Theme toggle button
     const themeBtn = document.getElementById('theme-toggle');
     if (themeBtn) {
       themeBtn.addEventListener('click', toggleTheme);
     }
-  });
-
-  // Initialize typing effect after content is loaded (from content-loader.js)
-  document.addEventListener('contentLoaded', function () {
-    initTypingEffect();
   });
 })();

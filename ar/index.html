@@ -18,18 +18,10 @@
     <link rel="preload" href="../assets/hero-bg.webp" as="image" type="image/webp" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700&family=Tajawal:wght@400;500;700;800;900&display=swap" as="style">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700&family=Tajawal:wght@400;500;700;800;900&display=swap"
-        rel="stylesheet" media="print" onload="this.media='all'">
-    <noscript>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;700&family=Noto+Sans+Arabic:wght@400;500;700&family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    </noscript>
-    <link rel="preload" href="../css/styles.css" as="style">
-    <link rel="stylesheet" href="../css/styles.css" media="print" onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="../css/styles.css">
-    </noscript>
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
     <script type="application/ld+json">
     {"@context":"https://schema.org","@type":"Organization","name":"Skynologix","url":"https://skynologix.com","logo":"https://skynologix.com/logo.svg","sameAs":["https://instagram.com/skynologix","https://facebook.com/skynologix"]}
     </script>
@@ -616,9 +608,10 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-brand"><a href="index.html" class="logo-link" style="margin-bottom:1.5rem"><img
-                            class="theme-logo" src="../assets/logo-white.svg" data-dark="../assets/logo-white.svg"
-                            data-light="../assets/logo-dark.svg" alt="سكاينولوجكس" width="40" height="40">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo-link" style="margin-bottom:1.5rem">
+                        <img class="theme-logo" src="../assets/logo-white.svg" data-dark="../assets/logo-white.svg"
+                            data-light="../assets/logo-dark.svg" alt="سكاينولوجكس" width="40" height="40" loading="lazy">
                         <div class="logo-text"><span class="brand">SKYNOLOGIX</span></div>
                     </a>
                     <p data-content="footer.brand_desc">وكالة رقمية متخصصة في تقديم حلول مبتكرة لتحويل أعمالك إلى تجارب
@@ -710,8 +703,6 @@
 
     <!-- Scripts -->
     <script src="../js/app.js" defer></script>
-    <script src="../js/reveal.js" defer></script>
-    <script src="../js/content-loader.js" defer></script>
 </body>
 
 </html>
