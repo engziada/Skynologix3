@@ -2,10 +2,10 @@
   "en": {
     "navbar": {
       "home": "Home",
+      "about": "About Us",
       "services": "Services",
       "process": "Process",
       "portfolio": "Portfolio",
-      "vision": "Vision",
       "contact": "Contact Us",
       "cta": "Book a Consultation",
       "mobile_cta": "Talk to Us"
@@ -118,10 +118,10 @@
   "ar": {
     "navbar": {
       "home": "الرئيسية",
+      "about": "من نحن",
       "services": "خدماتنا",
       "process": "المنهجية",
       "portfolio": "أعمالنا",
-      "vision": "رؤيتنا",
       "contact": "تواصل معنا",
       "cta": "احجز استشارة",
       "mobile_cta": "تحدث إلينا"
