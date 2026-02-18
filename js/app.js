@@ -167,27 +167,42 @@
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          // Handle transition delay
           const delay = parseInt(entry.target.dataset.delay || '0', 10);
           if (delay > 0) {
             entry.target.style.transitionDelay = delay + 'ms';
           }
-          
+
           entry.target.classList.add('active');
-          
-          // Check if this is a stats section and animate counters
+
           const statNumbers = entry.target.querySelectorAll('.stat-number');
           statNumbers.forEach(stat => animateCounter(stat));
-          
+
           observer.unobserve(entry.target);
         }
       });
     }, {
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px'
+      threshold: 0,
+      rootMargin: '0px 0px -20px 0px'
     });
 
     revealElements.forEach(el => observer.observe(el));
+
+    // Immediately activate elements already in viewport on load
+    requestAnimationFrame(function () {
+      revealElements.forEach(function (el) {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom > 0) {
+          const delay = parseInt(el.dataset.delay || '0', 10);
+          if (delay > 0) {
+            el.style.transitionDelay = delay + 'ms';
+          }
+          el.classList.add('active');
+          const statNumbers = el.querySelectorAll('.stat-number');
+          statNumbers.forEach(stat => animateCounter(stat));
+          observer.unobserve(el);
+        }
+      });
+    });
   }
 
   /* --- Animated Stats Counter --- */
@@ -324,6 +339,16 @@
     initRevealAnimations();
     initExitIntentModal();
     initTypingEffect();
+
+  // Re-run on bfcache restore (back/forward navigation)
+  window.addEventListener('pageshow', function (e) {
+    if (e.persisted) {
+      applyTheme(getStoredTheme());
+      document.querySelectorAll('.reveal:not(.active)').forEach(function (el) {
+        el.classList.add('active');
+      });
+    }
+  });
 
     // Theme toggle button
     const themeBtn = document.getElementById('theme-toggle');

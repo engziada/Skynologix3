@@ -785,6 +785,12 @@ textarea {
   gap: 1.25rem
 }
 
+@media(max-width: 599px) {
+  .nav-actions {
+    gap: 0.5rem
+  }
+}
+
 .header-social {
   display: none;
   align-items: center;
@@ -1067,6 +1073,13 @@ textarea {
   background: radial-gradient(circle at 30% 50%, transparent 0%, #060f1d 70%), linear-gradient(to right, transparent, #060f1d 80%)
 }
 
+@media (max-width: 767px) {
+  .hero-overlay,
+  [dir="rtl"] .hero-overlay {
+    background: linear-gradient(to bottom, rgba(6, 15, 29, 0.3) 0%, rgba(6, 15, 29, 0.75) 60%, #060f1d 100%)
+  }
+}
+
 /* ===== HERO BADGE CENTERING ===== */
 .hero-badge-wrapper {
   display: flex;
@@ -1099,7 +1112,9 @@ textarea {
 }
 
 .hero-inner {
-  width: 100%
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0
 }
 
 @media(min-width:768px) {
@@ -1109,12 +1124,16 @@ textarea {
 }
 
 [dir="rtl"] .hero-inner {
-  width: 100%
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0
 }
 
 @media(min-width:768px) {
   [dir="rtl"] .hero-inner {
-    width: 70%
+    width: 70%;
+    margin-left: 0;
+    margin-right: 0
   }
 }
 
