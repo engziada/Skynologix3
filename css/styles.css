@@ -785,9 +785,17 @@ textarea {
   gap: 1.25rem
 }
 
-@media(max-width: 599px) {
+@media(max-width: 600px) {
   .nav-actions {
     gap: 0.5rem
+  }
+
+  /* RTL Navbar swap for mobile: Logo Left, Menu Right */
+  [dir="rtl"] .navbar-inner {
+    flex-direction: row-reverse !important;
+  }
+  [dir="rtl"] .nav-actions {
+    flex-direction: row-reverse !important;
   }
 }
 
@@ -925,7 +933,7 @@ textarea {
     height: 32px;
   }
 
-  .brand {
+  .brand, .logo-text {
     display: none;
   }
   
