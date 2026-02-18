@@ -174,9 +174,6 @@
 
           entry.target.classList.add('active');
 
-          const statNumbers = entry.target.querySelectorAll('.stat-number');
-          statNumbers.forEach(stat => animateCounter(stat));
-
           observer.unobserve(entry.target);
         }
       });
@@ -197,8 +194,6 @@
             el.style.transitionDelay = delay + 'ms';
           }
           el.classList.add('active');
-          const statNumbers = el.querySelectorAll('.stat-number');
-          statNumbers.forEach(stat => animateCounter(stat));
           observer.unobserve(el);
         }
       });
@@ -207,6 +202,8 @@
 
   /* --- Animated Stats Counter --- */
   function animateCounter(element) {
+    if (element.dataset.animated === 'true') return;
+    element.dataset.animated = 'true';
     const target = parseInt(element.dataset.target, 10);
     const suffix = element.dataset.suffix || '';
     const duration = 2000; // 2 seconds
@@ -226,6 +223,25 @@
     }, duration / steps);
   }
 
+  function initStatCounters() {
+    const statNumbers = document.querySelectorAll('.stat-number');
+    if (!statNumbers.length) return;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          animateCounter(entry.target);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.4,
+      rootMargin: '0px 0px -20px 0px'
+    });
+
+    statNumbers.forEach(stat => observer.observe(stat));
+  }
+
   /* --- Typing Effect --- */
   function initTypingEffect() {
     // Disable typing effect on mobile for better performance
@@ -235,7 +251,11 @@
       document.querySelectorAll('.typing-text').forEach(element => {
         const phrases = JSON.parse(element.dataset.typing || '[]');
         if (phrases.length > 0) {
+          const cursor = element.querySelector('.typing-cursor');
           element.textContent = phrases[0];
+          if (cursor) {
+            element.appendChild(cursor);
+          }
         }
       });
       return;
@@ -337,6 +357,7 @@
     initScrollProgress();
     initCursorGlow();
     initRevealAnimations();
+    initStatCounters();
     initExitIntentModal();
     initTypingEffect();
 
@@ -347,6 +368,7 @@
       document.querySelectorAll('.reveal:not(.active)').forEach(function (el) {
         el.classList.add('active');
       });
+      initStatCounters();
     }
   });
 

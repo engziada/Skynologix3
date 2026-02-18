@@ -294,7 +294,8 @@
 
 /* ===== BASE ===== */
 html {
-  scroll-behavior: smooth
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -305,6 +306,7 @@ body {
   color: var(--text-primary);
   transition: background-color .3s, color .3s;
   line-height: 1.6;
+  overflow-x: hidden;
 }
 
 [dir="rtl"] body {
@@ -791,6 +793,29 @@ textarea {
   }
 }
 
+@media(max-width: 700px) {
+  [dir="rtl"] .navbar-inner {
+    gap: 0.5rem;
+  }
+
+  [dir="rtl"] .nav-actions {
+    gap: 0.4rem;
+  }
+
+  [dir="rtl"] .lang-toggle {
+    font-size: 0.65rem;
+  }
+
+  [dir="rtl"] .theme-toggle {
+    padding: 0.4rem;
+  }
+
+  [dir="rtl"] .theme-toggle svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 .header-social {
   display: none;
   align-items: center;
@@ -1077,6 +1102,19 @@ textarea {
   .hero-overlay,
   [dir="rtl"] .hero-overlay {
     background: linear-gradient(to bottom, rgba(6, 15, 29, 0.3) 0%, rgba(6, 15, 29, 0.75) 60%, #060f1d 100%)
+  }
+
+  [dir="rtl"] .hero {
+    justify-content: center;
+  }
+
+  [dir="rtl"] .hero-content,
+  [dir="rtl"] .hero-inner {
+    text-align: center;
+  }
+
+  [dir="rtl"] .hero-ctas {
+    justify-content: center;
   }
 }
 
